@@ -22,13 +22,15 @@ class Palatte extends Component {
     ));
     return (
       <div className="pallette">
-        <Slider
-          defaultValue={this.state.level}
-          min={100}
-          max={900}
-          onAfterChange={this.changeLevel}
-          step={100}
-        ></Slider>
+        <div className="slider">
+          <Slider
+            defaultValue={this.state.level}
+            min={100}
+            max={900}
+            onAfterChange={this.changeLevel}
+            step={100}
+          ></Slider>
+        </div>
         <div className="pallett-colors">{colorBoxs}</div>
       </div>
     );
