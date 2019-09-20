@@ -9,7 +9,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Pallette {...seedColors[4]}></Pallette>
+        <Pallette palette={generatePalette(seedColors[4])}></Pallette>
       </div>
     );
   }
