@@ -33,6 +33,11 @@ class App extends React.Component {
             ></Pallette>
           )}
         ></Route>
+        <Route
+          exact
+          path="/palette/:paletteId/:colorId"
+          render={() => <h1>single color</h1>}
+        ></Route>
       </Switch>
       // <div className="App">
       //   <Pallette palette={generatePalette(seedColors[4])}></Pallette>
