@@ -27,6 +27,7 @@ class Palatte extends Component {
         name={color.name}
         key={color.id}
         moreUrl={`/palette/${id}/${color.id}`}
+        showLink={true}
       ></ColorBox>
     ));
     return (
@@ -36,7 +37,7 @@ class Palatte extends Component {
           changeLevel={this.changeLevel}
           handleChange={this.changeFormat}
         ></Navbar>
-        <div className="pallett-colors">{colorBoxs}</div>
+        <div className="pallette-colors">{colorBoxs}</div>
         <footer className="palette-footer">
           {paletteName}
           <span className="emoji">{emoji}</span>
