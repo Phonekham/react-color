@@ -28,7 +28,7 @@ class Palatte extends Component {
         name={color.name}
         key={color.id}
         moreUrl={`/palette/${id}/${color.id}`}
-        showLink={true}
+        showingFullPalette={true}
       ></ColorBox>
     ));
     return (
