@@ -1,21 +1,10 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/styles";
 import ColorBox from "./ColorBox";
-import "./Palette.css";
 import "rc-slider/assets/index.css";
 import Navbar from "./Navbar";
 import PaletteFooter from "./PaletteFooter";
-
-const styles = {
-  Palette: {
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column"
-  },
-  colors: {
-    height: "90%"
-  }
-};
+import styles from "./styles/PaletteStyles";
 
 class Palatte extends Component {
   constructor(props) {
@@ -52,7 +41,7 @@ class Palatte extends Component {
           handleChange={this.changeFormat}
           showingAllColors
         ></Navbar>
-        <div className="pallette-colors">{colorBoxs}</div>
+        <div className={classes.colors}>{colorBoxs}</div>
         <PaletteFooter paletteName={paletteName} emoji={emoji}></PaletteFooter>
       </div>
     );
